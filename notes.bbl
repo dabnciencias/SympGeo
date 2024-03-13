@@ -1,0 +1,435 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{hügel2015silting}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f07ac9c35f8273f1e3c6213be367b071}{%
+           family={Angeleri\bibnamedelima Hügel},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Lidia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1b0d045e9d4d5525d7a3d30c790139e8}{%
+           family={Marks},
+           familyi={M\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=40ca13ddf9c325dd18b229a6c555cdc9}{%
+           family={Vitória},
+           familyi={V\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{fullhash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{bibnamehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{authorbibnamehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{authornamehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{authorfullhash}{02a8011cb1a249768c969b98a95c07bb}
+      \field{extraname}{1}
+      \field{labelalpha}{AMV15}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1073-7928}
+      \field{journaltitle}{International Mathematics Research Notices}
+      \field{month}{06}
+      \field{number}{4}
+      \field{title}{Silting Modules}
+      \field{volume}{2016}
+      \field{year}{2015}
+      \field{pages}{1251\bibrangedash 1284}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1093/imrn/rnv191
+      \endverb
+    \endentry
+    \entry{hügel2018characterisation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f07ac9c35f8273f1e3c6213be367b071}{%
+           family={Angeleri\bibnamedelima Hügel},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Lidia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1b0d045e9d4d5525d7a3d30c790139e8}{%
+           family={Marks},
+           familyi={M\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=40ca13ddf9c325dd18b229a6c555cdc9}{%
+           family={Vitória},
+           familyi={V\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{fullhash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{bibnamehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{authorbibnamehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{authornamehash}{02a8011cb1a249768c969b98a95c07bb}
+      \strng{authorfullhash}{02a8011cb1a249768c969b98a95c07bb}
+      \field{extraname}{2}
+      \field{labelalpha}{AMV18}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Model Theory of Modules, Algebras and Categories}
+      \field{title}{A characterisation of $\tau$-tilting finite algebras}
+      \field{year}{2018}
+    \endentry
+    \entry{hügel2019silting}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=f07ac9c35f8273f1e3c6213be367b071}{%
+           family={Angeleri\bibnamedelima Hügel},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Lidia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1b0d045e9d4d5525d7a3d30c790139e8}{%
+           family={Marks},
+           familyi={M\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=05ca7bfbf71dc492b664a4965c33c311}{%
+           family={Stovicek},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f05c6141445ed7d02b15871c9e06e6e3}{%
+           family={Takahashi},
+           familyi={T\bibinitperiod},
+           given={Ryo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=40ca13ddf9c325dd18b229a6c555cdc9}{%
+           family={Vitória},
+           familyi={V\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6531fcfd8696886ecd7bd8e25a387a4}
+      \strng{fullhash}{dbde885a14f223ad38304b67653557a6}
+      \strng{bibnamehash}{dbde885a14f223ad38304b67653557a6}
+      \strng{authorbibnamehash}{dbde885a14f223ad38304b67653557a6}
+      \strng{authornamehash}{e6531fcfd8696886ecd7bd8e25a387a4}
+      \strng{authorfullhash}{dbde885a14f223ad38304b67653557a6}
+      \field{labelalpha}{Ang+19}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Silting and Flat Ring Epimorphisms}
+      \field{year}{2019}
+    \endentry
+    \entry{adachi2021hereditary}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=3bd73c6e21229cef8d744ea844711ad6}{%
+           family={Adachi},
+           familyi={A\bibinitperiod},
+           given={Takahide},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1bb490fbed0dd99e84c956519432e4a1}{%
+           family={Tsukamoto},
+           familyi={T\bibinitperiod},
+           given={Mayu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd8f2b754010fc3fa1b58e14ee1ba977}
+      \strng{fullhash}{cd8f2b754010fc3fa1b58e14ee1ba977}
+      \strng{bibnamehash}{cd8f2b754010fc3fa1b58e14ee1ba977}
+      \strng{authorbibnamehash}{cd8f2b754010fc3fa1b58e14ee1ba977}
+      \strng{authornamehash}{cd8f2b754010fc3fa1b58e14ee1ba977}
+      \strng{authorfullhash}{cd8f2b754010fc3fa1b58e14ee1ba977}
+      \field{labelalpha}{AT21}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.RT}
+      \field{eprinttype}{arXiv}
+      \field{title}{Hereditary cotorsion pairs and silting subcategories in extriangulated categories}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2108.07773
+      \endverb
+    \endentry
+    \entry{crivei2004injective}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b4e69cb7ca36a590c87ebc9b4867a9b8}{%
+           family={Crivei},
+           familyi={C\bibinitperiod},
+           given={Septimiu},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stf. Emanuel de Martone Nr. 1 400090 Cluj-Napoca, Romania}%
+      }
+      \list{publisher}{1}{%
+        {Editura Fundaţiei pentru Studii Europene}%
+      }
+      \strng{namehash}{b4e69cb7ca36a590c87ebc9b4867a9b8}
+      \strng{fullhash}{b4e69cb7ca36a590c87ebc9b4867a9b8}
+      \strng{bibnamehash}{b4e69cb7ca36a590c87ebc9b4867a9b8}
+      \strng{authorbibnamehash}{b4e69cb7ca36a590c87ebc9b4867a9b8}
+      \strng{authornamehash}{b4e69cb7ca36a590c87ebc9b4867a9b8}
+      \strng{authorfullhash}{b4e69cb7ca36a590c87ebc9b4867a9b8}
+      \field{labelalpha}{Cri04}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{973-8254-51-5}
+      \field{title}{Injective Modules Relative to Torsion Theories}
+      \field{year}{2004}
+    \endentry
+    \entry{garcia2023thick}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e9952fb0ef8a312e15c7cd01a0eec9f7}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Mónica},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9952fb0ef8a312e15c7cd01a0eec9f7}
+      \strng{fullhash}{e9952fb0ef8a312e15c7cd01a0eec9f7}
+      \strng{bibnamehash}{e9952fb0ef8a312e15c7cd01a0eec9f7}
+      \strng{authorbibnamehash}{e9952fb0ef8a312e15c7cd01a0eec9f7}
+      \strng{authornamehash}{e9952fb0ef8a312e15c7cd01a0eec9f7}
+      \strng{authorfullhash}{e9952fb0ef8a312e15c7cd01a0eec9f7}
+      \field{labelalpha}{Gar23}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.RT}
+      \field{eprinttype}{arXiv}
+      \field{title}{On thick subcategories of the category of projective presentations}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2303.05226
+      \endverb
+    \endentry
+    \entry{gorsky2023hereditary}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=08d6c7a9154d329342dc56dbeefcd529}{%
+           family={Gorsky},
+           familyi={G\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a0d0cf9356e1f624cf3f04c23ff7f61b}{%
+           family={Nakaoka},
+           familyi={N\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a4f8cbfcc5069fcea75a6f2eb072f76a}{%
+           family={Palu},
+           familyi={P\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{0c8bd6b5533efbcede55ba0210dd623e}
+      \strng{fullhash}{0c8bd6b5533efbcede55ba0210dd623e}
+      \strng{bibnamehash}{0c8bd6b5533efbcede55ba0210dd623e}
+      \strng{authorbibnamehash}{0c8bd6b5533efbcede55ba0210dd623e}
+      \strng{authornamehash}{0c8bd6b5533efbcede55ba0210dd623e}
+      \strng{authorfullhash}{0c8bd6b5533efbcede55ba0210dd623e}
+      \field{labelalpha}{GNP23}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.RT}
+      \field{eprinttype}{arXiv}
+      \field{title}{Hereditary extriangulated categories: Silting objects, mutation, negative extensions}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2303.07134
+      \endverb
+    \endentry
+    \entry{liu2020hereditary}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=93c82128aca25c57cfb17e90d02136d5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c6f0319cbfbde3102639a165229fef95}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Panyue},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e1309c486ea12077aa2eba59078dbbd}
+      \strng{fullhash}{7e1309c486ea12077aa2eba59078dbbd}
+      \strng{bibnamehash}{7e1309c486ea12077aa2eba59078dbbd}
+      \strng{authorbibnamehash}{7e1309c486ea12077aa2eba59078dbbd}
+      \strng{authornamehash}{7e1309c486ea12077aa2eba59078dbbd}
+      \strng{authorfullhash}{7e1309c486ea12077aa2eba59078dbbd}
+      \field{labelalpha}{LZ20}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.RT}
+      \field{eprinttype}{arXiv}
+      \field{title}{Hereditary cotorsion pairs on extriangulated subcategories}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2012.06997
+      \endverb
+    \endentry
+    \entry{nakaoka2021localization}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=a0d0cf9356e1f624cf3f04c23ff7f61b}{%
+           family={Nakaoka},
+           familyi={N\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=71c39e0ba1dc3259c3522644932dd44d}{%
+           family={Ogawa},
+           familyi={O\bibinitperiod},
+           given={Yasuaki},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=45b9ad94fc77ca6cfd186d5ecd9d068e}{%
+           family={Sakai},
+           familyi={S\bibinitperiod},
+           given={Arashi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{15b77310bcae4758757dd6b76bb4f82b}
+      \strng{fullhash}{15b77310bcae4758757dd6b76bb4f82b}
+      \strng{bibnamehash}{15b77310bcae4758757dd6b76bb4f82b}
+      \strng{authorbibnamehash}{15b77310bcae4758757dd6b76bb4f82b}
+      \strng{authornamehash}{15b77310bcae4758757dd6b76bb4f82b}
+      \strng{authorfullhash}{15b77310bcae4758757dd6b76bb4f82b}
+      \field{labelalpha}{NOS21}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.CT}
+      \field{eprinttype}{arXiv}
+      \field{title}{Localization of extriangulated categories}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2103.16907
+      \endverb
+    \endentry
+    \entry{nakaoka2019extriangulated}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a0d0cf9356e1f624cf3f04c23ff7f61b}{%
+           family={Nakaoka},
+           familyi={N\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a4f8cbfcc5069fcea75a6f2eb072f76a}{%
+           family={Palu},
+           familyi={P\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8b49166c6f4df633336884447ea05d9}
+      \strng{fullhash}{b8b49166c6f4df633336884447ea05d9}
+      \strng{bibnamehash}{b8b49166c6f4df633336884447ea05d9}
+      \strng{authorbibnamehash}{b8b49166c6f4df633336884447ea05d9}
+      \strng{authornamehash}{b8b49166c6f4df633336884447ea05d9}
+      \strng{authorfullhash}{b8b49166c6f4df633336884447ea05d9}
+      \field{labelalpha}{NP19}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cah. Topol. Géom. Différ. Catég.}
+      \field{number}{2}
+      \field{title}{Extriangulated Categories, Hovey Twin Cotorsion Pairs and Model Structures}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{pages}{117\bibrangedash 193}
+      \range{pages}{77}
+    \endentry
+    \entry{pauksztello2023cotstructures}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d4df0053b5666cf3b8f6292a91f83047}{%
+           family={Pauksztello},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6cf028b8d53962cc80356728af3f482a}{%
+           family={Zvonareva},
+           familyi={Z\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{68c5fce21be088244a69be93c1e6f601}
+      \strng{fullhash}{68c5fce21be088244a69be93c1e6f601}
+      \strng{bibnamehash}{68c5fce21be088244a69be93c1e6f601}
+      \strng{authorbibnamehash}{68c5fce21be088244a69be93c1e6f601}
+      \strng{authornamehash}{68c5fce21be088244a69be93c1e6f601}
+      \strng{authorfullhash}{68c5fce21be088244a69be93c1e6f601}
+      \field{labelalpha}{PZ23}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
+      \field{number}{1}
+      \field{title}{Co-t-structures, cotilting and cotorsion pairs}
+      \field{volume}{175}
+      \field{year}{2023}
+      \field{pages}{89\bibrangedash 106}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1017/S030500412300004X
+      \endverb
+    \endentry
+    \entry{wei2013semitilting}{article}{}
+      \name{author}{1}{}{%
+        {{hash=661a0d3287228b7d5ae381459902a386}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Jiaqun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{661a0d3287228b7d5ae381459902a386}
+      \strng{fullhash}{661a0d3287228b7d5ae381459902a386}
+      \strng{bibnamehash}{661a0d3287228b7d5ae381459902a386}
+      \strng{authorbibnamehash}{661a0d3287228b7d5ae381459902a386}
+      \strng{authornamehash}{661a0d3287228b7d5ae381459902a386}
+      \strng{authorfullhash}{661a0d3287228b7d5ae381459902a386}
+      \field{labelalpha}{Wei13}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Israel Journal of Mathematics}
+      \field{month}{03}
+      \field{title}{Semi-tilting complexes}
+      \field{volume}{194}
+      \field{year}{2013}
+      \field{pages}{871\bibrangedash 893}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/s11856-012-0093-1
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
