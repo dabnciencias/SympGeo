@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.30)  13 MAR 2024 09:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.30)  13 MAR 2024 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1085,7 +1085,7 @@ Package biblatex Info: ... and expl3
  (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+Package hyperref Info: Option `colorlinks' set `true' on input line 51.
 \c@Dfn=\count468
 )
 \@quotelevel=\count469
@@ -1095,7 +1095,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 4.
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./notes.aux
 
-LaTeX Warning: Label `Prop: ' multiply defined.
+LaTeX Warning: Label `Prp: ' multiply defined.
 
 )
 \openout1 = `notes.aux'.
@@ -1277,10 +1277,10 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47353 strings out of 477985
- 1073891 string characters out of 5840058
- 1907061 words of memory out of 5000000
- 66728 multiletter control sequences out of 15000+600000
+ 47310 strings out of 477985
+ 1073295 string characters out of 5840058
+ 1906587 words of memory out of 5000000
+ 66685 multiletter control sequences out of 15000+600000
  580381 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  88i,12n,120p,1150b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s

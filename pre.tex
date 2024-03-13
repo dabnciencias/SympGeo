@@ -33,6 +33,7 @@
 \usepackage[maxbibnames=99, style=alphabetic]{biblatex}
 \addbibresource{misc.bib}
 
+%colors
 \definecolor{NARANJA}{rgb}{1,0.467,0}
 \definecolor{VERDE}{rgb}{0.31,1,0}
 \definecolor{AZUL}{rgb}{0,0.53,1}
@@ -40,6 +41,7 @@
 \definecolor{MAGENTA}{rgb}{1,0,1}
 \definecolor{db}{rgb}{0.85,0.4,0}
 
+%hyperlinks
 \hypersetup{
     colorlinks=true,
     citecolor=AZUL,
@@ -48,7 +50,11 @@
     urlcolor=AZUL,
 }
 
+%numbering
 \numberwithin{section}{chapter}
+\numberwithin{equation}{chapter}
+
+%custom environments
 \newtheoremstyle{dotlessB}{}{}{}{}{\bfseries}{}{ }{}
 \theoremstyle{dotlessB}
 %\newtheorem{Stp}{Setup}[section]
@@ -56,123 +62,21 @@
 \newtheorem{Exp}[Dfn]{Example}
 \newtheorem{Rmk}[Dfn]{Remark}
 \newtheorem{Lmm}[Dfn]{Lemma}
-\newtheorem{Prop}[Dfn]{Proposition}
+\newtheorem{Prp}[Dfn]{Proposition}
 \newtheorem{Thm}[Dfn]{Theorem}
 \newtheorem{Cor}[Dfn]{Corollary}
 \newtheorem{Exc}[Dfn]{Exercise}
 \newtheorem*{Nt}{Note}
-\numberwithin{equation}{chapter}
 \newcommand{\DfnLbl}{(\alph*)}
 \newcommand{\ExpLbl}{(\arabic*)}
 \newcommand{\RmkLbl}{(\arabic*)}
 \newcommand{\LmmLbl}{(\alph*)}
 \newcommand{\PropLbl}{(\alph*)}
 \newcommand{\ExcLbl}{(\arabic*)}
-%Additive subcategories
-\newcommand{\additiveSubcat}{\mathscr{A}}
-\newcommand{\triangulatedCat}{\mathscr{T}}
-%\newcommand{\shiftFunc}{\Sigma} %turn into function for exponents?
-%\newcommand\shiftFunc[2][1]{\ifthenelse{\equal{#1}{1}}{\Sigma #2}{\Sigma^{#1}#2}} %\Sigma^i version"
-\newcommand\shiftFunc[2][1]{\ifthenelse{\equal{#1}{1}}{#2[1]}{#2[#1]}} %"[i] version"
-\newcommand{\triangleClass}{\Delta} %turn into function for exponents?
-\newcommand{\triangulatedTriple}{(\triangulatedCat,\shiftFunc{},\triangleClass)}
-\newcommand{\extriangulatedCat}{\mathscr{C}}
-\newcommand{\extFunc}{\mathbb{E}}
-\newcommand{\additiveReal}{\mathfrak{s}}
-\newcommand{\extriangulatedTriple}{(\extriangulatedCat,\extFunc,\additiveReal)}
-%Approximation theory
-\newcommand{\precoveringSubcat}{\mathcal{A}}
-\newcommand{\precoveringObj}{A}
-\newcommand{\precoveringMorph}{a}
-\newcommand{\preenvelopingSubcat}{\mathcal{B}}
-\newcommand{\preenvelopingObj}{B}
-\newcommand{\preenvelopingMorph}{b}
-%Torsion and cotorsion theory
-\newcommand{\torsionClass}{\mathcal{T}}
-\newcommand{\torsionObj}{T}
-\newcommand{\torsionfreeClass}{\mathcal{F}}
-\newcommand{\torsionfreeObj}{F}
-\newcommand{\torsionPair}{(\torsionClass,\torsionfreeClass)}
-\newcommand{\cotorsionClass}{\mathcal{X}}
-\newcommand{\cotorsionObj}{X}
-\newcommand{\cotorsionfreeClass}{\mathcal{Y}}
-\newcommand{\cotorsionfreeObj}{Y}
-\newcommand{\cotorsionPair}{(\cotorsionClass,\cotorsionfreeClass)}
-%Silting and cosilting theory
-\newcommand{\homotopyCat}{K}
-\newcommand{\derivedCat}{D}
-\newcommand{\homologyFunc}{H}
 
 %todonotes
 \newcommand{\simple}[1]{\todo[inline,color=VERDE]{#1}}
 \newcommand{\writing}[1]{\todo[inline,color=NARANJA]{#1}}
 \newcommand{\research}[1]{\todo[inline,color=ROJO]{#1}}
 
-%arrows
-\newcommand{\xtwoheadrightarrow}[2][]{% Por alguna bizarra razón, \xhookrightarrow sí existe pero \xtwoheadrightarrow, no.
-  \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
-}
-
-\newcommand{\xrightarrowtail}[2][]{% \xrightarrowtail tampoco existe.
-  \xrightarrow[#1]{#2}\mathrel{\mkern-21mu}\rightarrowtail
-}
-
-\makeatletter
-\newcommand*{\da@rightarrow}{\mathchar"0\hexnumber@\symAMSa 4B }
-\newcommand*{\da@leftarrow}{\mathchar"0\hexnumber@\symAMSa 4C }
-\newcommand*{\xdashrightarrow}[2][]{%
-  \mathrel{%
-    \mathpalette{\da@xarrow{#1}{#2}{}\da@rightarrow{\,}{}}{}%
-  }%
-}
-\newcommand{\xdashleftarrow}[2][]{%
-  \mathrel{%
-    \mathpalette{\da@xarrow{#1}{#2}\da@leftarrow{}{}{\,}}{}%
-  }%
-}
-\newcommand*{\da@xarrow}[7]{%
-  % #1: below
-  % #2: above
-  % #3: arrow left
-  % #4: arrow right
-  % #5: space left 
-  % #6: space right
-  % #7: math style 
-  \sbox0{$\ifx#7\scriptstyle\scriptscriptstyle\else\scriptstyle\fi#5#1#6\m@th$}%
-  \sbox2{$\ifx#7\scriptstyle\scriptscriptstyle\else\scriptstyle\fi#5#2#6\m@th$}%
-  \sbox4{$#7\dabar@\m@th$}%
-  \dimen@=\wd0 %
-  \ifdim\wd2 >\dimen@
-    \dimen@=\wd2 %   
-  \fi
-  \count@=2 %
-  \def\da@bars{\dabar@\dabar@}%
-  \@whiledim\count@\wd4<\dimen@\do{%
-    \advance\count@\@ne
-    \expandafter\def\expandafter\da@bars\expandafter{%
-      \da@bars
-      \dabar@ 
-    }%
-  }%  
-  \mathrel{#3}%
-  \mathrel{%   
-    \mathop{\da@bars}\limits
-    \ifx\\#1\\%
-    \else
-      _{\copy0}%
-    \fi
-    \ifx\\#2\\%
-    \else
-      ^{\copy2}%
-    \fi
-  }%   
-  \mathrel{#4}%
-}
-\makeatother
-
 \let\MakeUppercase\relax % Makes Chapter titles in headers not be in ALL CAPS
-
-\makeatletter
-\newcommand{\leqnomode}{\tagsleft@true\let\veqno\@@leqno} % Allows equation numbering to the left
-\newcommand{\reqnomode}{\tagsleft@false\let\veqno\@@eqno}
-\makeatother

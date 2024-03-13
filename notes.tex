@@ -134,7 +134,7 @@ $\Omega$ is symplectic if and only if
     \] 
 \end{Dfn}
 
-\begin{Prop}[]\label{Prop: }
+\begin{Prp}[]\label{Prp: }
     Let $(V,\Omega)$ be a symplectic vector space and $U\subseteq V$ a linear subspace. Then,
     \[
     \text{dim}(U) + \text{dim}(U^\Omega) = \text{dim}(V) \quad \text{and} \quad (U^\Omega)^\Omega = U.
@@ -143,7 +143,7 @@ $\Omega$ is symplectic if and only if
     
         The first part follows from the fact that $\Omega^\#$ is an isomorphism. Moreover, the inclusion $U\subseteq (U^\Omega)^\Omega$ follows from Definition \ref{Dfn: Symplectic orthogonal} and the equality follows by noticing their dimensions are equal.
     \end{proof}
-\end{Prop}
+\end{Prp}
 
 \begin{Rmk}\label{Rmk: Characterization of isotropy and coisotropy}
     Let $U$ be a linear subspace of a symplectic vector space $(V,\Omega)$. Then $U$ is
@@ -171,7 +171,7 @@ $\Omega$ is symplectic if and only if
     \end{enumerate}
 \end{Exc}
 
-\begin{Prop}[]\label{Prop: }
+\begin{Prp}[]\label{Prp: }
     A symplectic vector space $(V,\Omega)$ with $\text{dim}(V)=2n$ has a symplectic basis.
 
     \begin{proof}
@@ -180,13 +180,13 @@ $\Omega$ is symplectic if and only if
 
         Assume the Proposition holds for $\text{dim}(V)=2n$. Let $v,v'\in V$ be such that $\Omega(v,v')\neq 0$. Then $(S := \langle v,v' \rangle, \Omega\mid_S)$ is a symplectic space of dimension 2. Note that $(S^\Omega, \Omega\mid_{S^\Omega})$ is a symplectic vector space of dimension $2n$. Since $V=S\oplus S^\Omega$, where both subspaces have symplectic bases due to the induction hypothesis, it follows that $(V,\Omega)$ has a symplectic basis.
     \end{proof}
-\end{Prop}
+\end{Prp}
 
 \begin{Rmk}\label{Rmk: Dimension of Lagrangian subspaces}
     If $L$ is a Lagrangian subspace of a symplectic vector space $(V,\Omega)$, then $\text{dim}(L) = \frac{\text{dim}(V)}{2}$.
 \end{Rmk}
 
-\begin{Prop}[Lagrangian split]\label{Prop: Lagrangian split}
+\begin{Prp}[Lagrangian split]\label{Prp: Lagrangian split}
     Let $(V,\Omega)$ be a symplectic vector space. Then, there exist Lagrangian subspaces $L,L'$ such that $V=L'\oplus L'$.
 
     \begin{proof}
@@ -196,14 +196,14 @@ $\Omega$ is symplectic if and only if
         \end{Exc}
         
     \end{proof}
-\end{Prop}
+\end{Prp}
 
 \begin{Rmk}\label{Rmk: The Lagrangian split is canonical}
     Recall that linear maps $\varphi:V\to V$ induce a map between bilinear forms via
     \[
     \varphi^\ast(\Omega(v,v')) = \Omega(\varphi(v),\varphi(v')).
     \] 
-    The Lagrangian split $V=L\oplus L'$ of Proposition \ref{Prop: Lagrangian split} is canonical in the sense that there exists a canonical isomorphism $\varphi:V\to L\oplus L'$ such that $(\varphi^{-1})^\ast\Omega$ is the canonical symplectic form on $L\oplus L'$, i.e.
+    The Lagrangian split $V=L\oplus L'$ of Proposition \ref{Prp: Lagrangian split} is canonical in the sense that there exists a canonical isomorphism $\varphi:V\to L\oplus L'$ such that $(\varphi^{-1})^\ast\Omega$ is the canonical symplectic form on $L\oplus L'$, i.e.
     \[
     \Omega(v_1+v_1', v_2+v_2') = \Omega(v_1,v_2') - \Omega(v_2,v_1').
     \] 
