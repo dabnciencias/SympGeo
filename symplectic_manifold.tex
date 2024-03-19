@@ -1,0 +1,57 @@
+\begin{Dfn}
+    Given a differentail manifold $M$ we say that a $2$--form $\omega$ is symplectic if it is
+    \begin{enumerate}[label=\DfnLbl]
+
+        \item closed, i.e. $d\omega=0$;
+
+        \item non-degenerate \simple{check, not really clear}
+
+        \item for each $p$ we have that $\omega_p$ is a symplectic form on $T_pM$.
+    \end{enumerate}
+
+    We call the couple $(M,\omega)$ symplectic manifold.
+\end{Dfn}
+
+\begin{Prp}
+    A symplectic manifold has always even dimension.
+\end{Prp}
+
+\begin{Exp}
+    $(\mathbb{R}^{2n},\omega_{std})$ with coordinates $x_1,\dots,x_n,y_1,\dots,y_n$. $\omega=\sum_i dx_i \wedge dy_i$.
+
+    For each $p$ $\omega_p$ is given by: $\left( (\frac{\partial}{\partial x_1})_p, \dots, (\frac{\partial}{\partial x_n})_p, (\frac{\partial}{\partial y_1})_p, \dots, (\frac{\partial}{\partial y_n})_p\right)$. It is symplectic for $T_pM$.
+
+    We can do the same considering $\mathbb{C}^n$ with $\omega=\frac{1}{2} \sum_i dz_i \wedge d\bar{z_i}$.
+\end{Exp}
+
+\begin{Exp}\
+    Take now the sphere $S^2$ as subset of $\mathbb{R}^3$. We know that $T_pS^2$ is given by $\{p\}^\perp$.
+
+    Now we define the symplectic form $\omega$ in the following way $\omega_p(u,v)=<p; v \times u>$. In fact it is closed because it is a $2$--form in a dimension $2$ manifold and it is non degenerate becuase $v \times u$ has always the direction of $p$ is they are in $T_pS^2$.\
+
+    This $\omega$ is a volume form for $S^2$.
+\end{Exp}
+
+\begin{Exc}
+    The above definition is an implicit one, we can define the same form in coordinates taking the coordinates $\theta, z$. In this case the form can be expressed as $\omega= d\theta \wedge dz$.
+
+    Also how the form will change if we take the sphere of radius $R$?
+\end{Exc}
+
+\begin{Dfn}
+    Given two symplectic manifolds $(M_1,\omega_1)$ and $(M_2,\omega_2)$ we say that a symplectomorphism is a diffeomorphism $g$ such that $g^\star\omega_2=\omega_1$.
+
+    As before the dimension is the only invariant but now only in a local scope.
+\end{Dfn}
+
+\simple{To add all the cotangent bundle!}
+
+\begin{Prp}
+    $S^2$ is the only sphere that can be symplectic, all the other have second order cohomology group trivial so can not have a symplectic form.
+\end{Prp}
+
+\begin{Prp}
+    All the symplectomorphism preserve the areas but the converse is not true nor a banal proof. It was worthy a field medal.
+\end{Prp}
+
+\subsection*{19/03/2024}

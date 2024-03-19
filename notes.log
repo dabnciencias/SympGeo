@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.29)  13 MAR 2024 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.29)  19 MAR 2024 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1379,11 +1379,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./notes.aux
-
-LaTeX Warning: Label `Prp: ' multiply defined.
-
-)
+) (./notes.aux)
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1572,9 +1568,21 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [3]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 218.
-) [4] (./notes.aux)
+ [4]
+Overfull \hbox (38.47751pt too wide) detected at line 282
+\OML/lmm/m/it/12 v[] [] u \OT1/lmr/m/n/12 = 
+[](\OML/lmm/m/it/12 u; v\OT1/lmr/m/n/12 ) = \OML/lmm/m/it/12 ^^^[]\OT1/lmr/m/n/
+12 
+[](\OML/lmm/m/it/12 u; v\OT1/lmr/m/n/12 ) = 
+[](\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 u\OT1/lmr/m/n/12 )\OML
+/lmm/m/it/12 ; ^^^\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 v\OT1/lmr/m/n/12 )) = (\OML
+/lmm/m/it/12 Av\OT1/lmr/m/n/12 )[] [] (\OML/lmm/m/it/12 Au\OT1/lmr/m/n/12 ) = \
+OML/lmm/m/it/12 v[]A[] [] Au;
+ []
 
-LaTeX Warning: There were multiply-defined labels.
+) (./symplectic_manifold.tex [5]) [6] (./notes.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 1475B7937DD7DFF588C970990D9C54C2;91.
@@ -1583,30 +1591,31 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47322 strings out of 476034
- 1078004 string characters out of 5792864
- 1911767 words of memory out of 6000000
- 66948 multiletter control sequences out of 15000+600000
+ 47363 strings out of 476034
+ 1078534 string characters out of 5792864
+ 1910849 words of memory out of 6000000
+ 66958 multiletter control sequences out of 15000+600000
  586382 words of font info for 86 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 88i,12n,120p,1150b,1180s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,120p,1150b,1182s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/lm/lmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb>
-Output written on notes.pdf (4 pages, 240400 bytes).
+ublic/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi6.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on notes.pdf (6 pages, 259327 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 90 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
