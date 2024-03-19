@@ -1,3 +1,7 @@
+\documentclass[misc]{subfiles}
+\begin{document} 
+
+\section*{Introduction}\label{Sec: Introduction}
 \subsection*{11/3/24}\label{Sec: 11/3/24}
 \begin{Nt}\label{Nt: Vector spaces}
     All vector spaces are real and finite dimensional unless otherwise stated.
@@ -241,10 +245,8 @@ $\Omega$ is symplectic if and only if
 
 \subsection*{18/3/24}\label{Sec: 18/3/24}
 
-\simple{The lesson of Tuesday 02/04/2024 is cancelled}
-
 \begin{Rmk}
-    For every symplectic vector space $(V,/Omega)$ we already saw that we can build a symplectic basis (\ref{Prp: Symplectic Basis}). Taking each time two elements of that basis and doing the ortogonal we get the following split of $V$:
+    For every symplectic vector space $(V,\Omega)$ we already saw that we can build a symplectic basis (\ref{Prp: Symplectic Basis}). Taking each time two elements of that basis and doing the ortogonal we get the following split of $V$:
     \[
         V=W_1 \oplus \dots \oplus W_n,
     \]
@@ -252,7 +254,7 @@ $\Omega$ is symplectic if and only if
 \end{Rmk}
 
 \begin{Dfn}
-    Given two symplectic vetor spaces $(V,\Omega)$ and $(V^\prime,\Omega^\prime)$ we call a symplectomorphism a linear isomorphism $\phi: V \rightarrow V^\prime$ such that $\phi^\star\Omega^\prime=\Omega$, where $\phi^\star$ is the pullback.
+    Given two symplectic vetor spaces $(V,\Omega)$ and $(V^\prime,\Omega^\prime)$ we call a \emph{symplectomorphism} a linear isomorphism $\phi: V \rightarrow V^\prime$ such that $\phi^\star\Omega^\prime=\Omega$, where $\phi^\star$ is the pullback.
 
     We say that $V$ and $V^\prime$ are symplectomorphic.
 \end{Dfn}
@@ -265,28 +267,34 @@ $\Omega$ is symplectic if and only if
     \begin{enumerate}[label=\ExpLbl]
         \item $\mathbb{R}^2$ and $\mathbb{R}^4$ can not be symplectiomorphic because a symplectomorphism is always a liner isomorphism over the vector space,
 
-        \item Every symplectic vector space $(V,\Omega)$ of dimension $2n$ is symplectomorphic to $\mathbb{R}^{2n}$ with the canonical basis. In fact we can take the symplectic basis of $V$ and than take the ismorphism that send this basis to the canonical basis of $\mathbb{R}^{2n}$.
+        \item Every symplectic vector space $(V,\Omega)$ of dimension $2n$ is symplectomorphic to $\mathbb{R}^{2n}$ with the canonical basis. In fact we can take the symplectic basis of $V$ and than take the ismorphism that sends this basis to the canonical basis of $\mathbb{R}^{2n}$.
     \end{enumerate}
 \end{Exp}
 
 \begin{Rmk}
-    Beeing symplectomorphic is an equivalence relations. It is interesting to see and study the acting group that preserve the structure.
+    Being symplectomorphic is an equivalence relation. It is interesting to see and study the acting group that preserves the structure.
 \end{Rmk}
 
 \begin{Dfn}
-    We call $Sp(V,\Omega)=Sp(2n,\mathbb{R})$ the group of symplectic automorphism of $(V,\Omega)$ of dimension $2n$. It is given by the following subset of $\text{Mat}_{2n \times 2n}$, $\left\{ A : A^t \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} A= \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} \right\} $.
+    We call $Sp(V,\Omega)=Sp(2n,\mathbb{R})$ the group of symplectic automorphisms of $(V,\Omega)$ of dimension $2n$. It is given by the following subset of $\text{Mat}_{2n \times 2n}$, $\left\{ A : A^T \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} A= \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} \right\} $.
 
     In fact if $\phi$ is a symplectic automorphism of $\mathbb{R}^{2n}$ with the canonical form and $A$ is the associated matrix we get that:
-    \[
-        v^t \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} u=\Omega_0(u,v)=\phi^\star\Omega_0(u,v)=\Omega_0(\phi(u),\phi(v))=(Av)^t \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} (Au)=v^t A^t \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} A u,
-    \]
-    but this must ve true for each $u$ and each $v$ so $A$ respect the condition that we have imposed.
+    \begin{align*}
+        v^T \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} u &=\Omega_0(u,v) \\
+                              &=\phi^\star\Omega_0(u,v) \\
+                              &=\Omega_0(\phi(u),\phi(v)) \\
+                              &=(Av)^T \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} (Au) \\
+                              &=v^T A^T \begin{pmatrix} 0 &\vline &I_n \\ \hline -I_n &\vline &0\end{pmatrix} A u,
+    \end{align*}
+    but this must be true for each $u$ and each $v$, so $A$ respects the condition that we have imposed.
 \end{Dfn}
 
 \begin{Prp}
-    $Sp(2n,\mathbb{R})$ is a group with standard moltiplication and inverse or quadratic matrices. Also the determinant of $A$ is always $1$.
+    $Sp(2n,\mathbb{R})$ is a group with standard multiplication and inverse or quadratic matrices. Also the determinant of $A$ is always $1$.
 \end{Prp}
 
 \begin{Rmk}
-    Both $GL$ and $SO$ are group of automorphism, the difference is that $SO$ preserves both the lenght of the vectors and the areas.
+    Both $GL$ and $SO$ are groups of automorphisms, the difference is that $SO$ preserves both the lenght of the vectors and the areas.
 \end{Rmk}
+
+\end{document}

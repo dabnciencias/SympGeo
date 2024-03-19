@@ -1,10 +1,13 @@
+\documentclass[misc]{subfiles}
+\begin{document} 
+
 \begin{Dfn}
-    Given a differentail manifold $M$ we say that a $2$--form $\omega$ is symplectic if it is
+    Given a differential manifold $M$ we say that a $2$--form $\omega$ is symplectic if it is
     \begin{enumerate}[label=\DfnLbl]
 
         \item closed, i.e. $d\omega=0$;
 
-        \item non-degenerate \simple{check, not really clear}
+        \item non-degenerate, i.e. $\omega(u,v)=0 \quad \forall \ v\in M \implies u=0$.
 
         \item for each $p$ we have that $\omega_p$ is a symplectic form on $T_pM$.
     \end{enumerate}
@@ -13,45 +16,145 @@
 \end{Dfn}
 
 \begin{Prp}
-    A symplectic manifold has always even dimension.
+    A symplectic manifold always has even dimension.
 \end{Prp}
 
 \begin{Exp}
     $(\mathbb{R}^{2n},\omega_{std})$ with coordinates $x_1,\dots,x_n,y_1,\dots,y_n$. $\omega=\sum_i dx_i \wedge dy_i$.
 
-    For each $p$ $\omega_p$ is given by: $\left( (\frac{\partial}{\partial x_1})_p, \dots, (\frac{\partial}{\partial x_n})_p, (\frac{\partial}{\partial y_1})_p, \dots, (\frac{\partial}{\partial y_n})_p\right)$. It is symplectic for $T_pM$.
+    For each $p$, $\omega_p$ is given by: $\left( (\frac{\partial}{\partial x_1})_p, \dots, (\frac{\partial}{\partial x_n})_p, (\frac{\partial}{\partial y_1})_p, \dots, (\frac{\partial}{\partial y_n})_p\right)$. It is symplectic on $T_pM$.
 
     We can do the same considering $\mathbb{C}^n$ with $\omega=\frac{1}{2} \sum_i dz_i \wedge d\bar{z_i}$.
 \end{Exp}
 
 \begin{Exp}\
-    Take now the sphere $S^2$ as subset of $\mathbb{R}^3$. We know that $T_pS^2$ is given by $\{p\}^\perp$.
+    Take now the sphere $S^2$ as a subset of $\mathbb{R}^3$. We know that $T_pS^2$ is given by $\{p\}^\perp$.
 
-    Now we define the symplectic form $\omega$ in the following way $\omega_p(u,v)=<p; v \times u>$. In fact it is closed because it is a $2$--form in a dimension $2$ manifold and it is non degenerate becuase $v \times u$ has always the direction of $p$ is they are in $T_pS^2$.\
+    Now we define the symplectic form $\omega$ in the following way $\omega_p(u,v)=<p; v \times u>$. In fact it is closed is because it is a $2$--form in a dimension $2$ manifold and it is non degenerate becuase $v \times u$ always has the direction of $p$ as they are in $T_pS^2$.\
 
     This $\omega$ is a volume form for $S^2$.
 \end{Exp}
 
 \begin{Exc}
-    The above definition is an implicit one, we can define the same form in coordinates taking the coordinates $\theta, z$. In this case the form can be expressed as $\omega= d\theta \wedge dz$.
+    The above definition is an implicit one; we can define the same form in coordinates taking the coordinates $\theta, z$. In this case the form can be expressed as $\omega= d\theta \wedge dz$.
 
-    Also how the form will change if we take the sphere of radius $R$?
+    Also how will the form change if we take the sphere of radius $R$?
 \end{Exc}
 
 \begin{Dfn}
-    Given two symplectic manifolds $(M_1,\omega_1)$ and $(M_2,\omega_2)$ we say that a symplectomorphism is a diffeomorphism $g$ such that $g^\star\omega_2=\omega_1$.
+    Given two symplectic manifolds $(M_1,\omega_1)$ and $(M_2,\omega_2)$ we say that a \emph{symplectomorphism} is a diffeomorphism $g$ such that $g^\star\omega_2=\omega_1$.
 
-    As before the dimension is the only invariant but now only in a local scope.
+    As before, the dimension is the only invariant, but now only in a local scope.
 \end{Dfn}
 
-\simple{To add all the cotangent bundle!}
+\simple{Add all the cotangent bundles!}
 
 \begin{Prp}
-    $S^2$ is the only sphere that can be symplectic, all the other have second order cohomology group trivial so can not have a symplectic form.
+    $S^2$ is the only sphere that can be symplectic, all the others have a trivial second order cohomology group, so they cannot have a symplectic form.
 \end{Prp}
 
 \begin{Prp}
-    All the symplectomorphism preserve the areas but the converse is not true nor a banal proof. It was worthy a field medal.
+    All the symplectomorphisms preserve the areas but the converse is not true nor a banal proof. It was worthy of a Field's medal.
 \end{Prp}
 
 \subsection*{19/03/2024}
+
+Last class we considered a manifold $X$ of dimension $n$ and saw that
+\[
+M=T^\ast:=\{(x,\xi^\ast), x\in X, \xi^\ast\in T_x^\ast X\}
+\] 
+is a symplectic manifold of dimension 2n. If $(x_1,\dots,x_n)$ is a coordinate system on $X$, then $\{(dx_1)_x,\dots,(d_n)_x)\}$ is a basis for $T_x^\ast X$. Also, $\xi^\ast=\sum_{i=1}^n y_i(dx_i)_x$ and $(x_1,\dots,x_n,y_1,\dots,y_n)$ are coordinates on $T^\ast X$, with
+\begin{align*}
+    \omega_\text{can} &= \sum_{i=1}^n dx_1\wedge dy_1, \\
+                      &= \lambda_\text{can} = \sum_{i=1}^n y_i dx_i, \\
+                      &= -d\lambda_\text{can}.
+\end{align*}
+
+\simple{Part of the reminder is missing (she erased it too fast).}
+
+Let $X_1,X_2$ be differentiable manifolds of dimension $n$,
+\begin{align*}
+    M_1 &= (T^\ast X_1, -d\lambda_1), \\
+    M_2 &= (T^\ast X_2, -d\lambda_2),
+\end{align*}
+where $\lambda_i$ is the canonical Liouville term on $X_i$ for $i\in\{1,2\}$. Let $f:X_1\to X_2$ be a differomorphism. Then
+\begin{align*}
+    f_\mathbb{X}: M_1 &\to M_2, \\
+    p_1 &\mapsto p_2,
+\end{align*}
+where $p_1 = (x_1,\xi_1^\ast)$ and $p_2 = (f(x_1), \xi_2^\ast)$, where $\xi_2^\ast\in T_{f(x_1)}^\ast X_2$. We have that
+\begin{align*}
+    df:TX_1 &\to TX_2 \\
+    df_{x_1}: T_{x_1}X_1 &\to T_{f(x_1)}X_2, \\
+    (df_{x_1})^\ast: T^\ast_{f(x_1)}X_2 &\to T^\ast_{x_1}X_1.
+\end{align*}
+Since $f$ is in particular a bijection then, defining $x_2:=f(x_1)$, we have that
+\begin{align*}
+    df^{-1}_{x_1}:T_{x_2}X_2 &\to T_{x_1}X_1, \\
+    (df^{-1}_{x_1})^\ast:T_{x_1}^\ast X_1 &\to T_{x_2}^\ast X_2, \\
+    \xi_1^\ast &\mapsto (df^{-1}_{x_2})^\ast(\xi_1^\ast) =: \xi_2^\ast.
+\end{align*}
+Moreover, we have the following commutative diagram
+\begin{equation}
+    \begin{tikzcd}
+        M_1 \arrow[]{d}[swap]{\pi_1} \arrow[]{r}[]{f_\mathbb{X}} &M_2 \arrow[]{d}[]{\pi_2} \\
+        X_1 \arrow[]{r}[swap]{f} &X_2.
+    \end{tikzcd}
+\end{equation}
+
+\begin{Prp}[]\label{Prp: Modular forms implies associated 2-forms}
+    Let $f_\mathbb{X}:M_1\to M_2$ be a diffeomorphism be such that $f_\mathbb{X}^\ast(\lambda_2)=\lambda_1$. Then $f_\mathbb{X}^\ast(-d\lambda_2) = -d\lambda_1$.
+
+    \begin{proof}
+    
+        Let $p_1 = (x_1, \xi_1^\ast)\in T^\ast X_1$ and $p_2 = f_\mathbb{X}(p_1) = (f(x_1), \xi_2^\ast)$.
+        \begin{align*}
+            (f_\mathbb{X})^\ast((\lambda_2)_{p_2}) &= (f_\mathbb{X}^\ast)_{p_1}((d\pi_2)_{p_2}^\ast\xi_2^\ast) \\
+                                                   &= d(f\pi_1)_{p_1}^\ast \xi_2^\ast \\
+                                                   &= (d\pi_1)^\ast_{p_1} f^\ast_\mathbb{X}(\xi_2^\ast) \\
+                                                   &= (d\pi_1)_{p_1}^\ast \xi_1^\ast \\
+                                                   &= (\lambda_1)_{p_1}.
+        \end{align*}
+    \end{proof}
+\end{Prp}
+
+\begin{Cor}[]\label{Cor: Diffeomorphism induces symplectomorphism}
+    If $X_1$ and $X_2$ are diffeomorphic, then $T^\ast X_1$ and $T^\ast X_2$ are symplectomorphic.
+\end{Cor}
+
+\begin{Exp}
+    Let $(M_1,\omega_1)$ and $(M_2,\omega_2)$ be symplectic manifolds. Then we have a product $M_1\times M_2$ with projections
+    \begin{center}
+        \begin{tikzcd}
+            &M_1\times M_2 \arrow[]{dl}[swap]{p_1} \arrow[]{dr}[]{p_2} \\
+            M_1 &&M_2.
+        \end{tikzcd}
+    \end{center}
+    Then, $\omega_{a,b}:= ap_1^\ast\omega_1 + bp_2^\ast\omega_2$ is a symplectic form on $M_1\times M_2$ for all $a,b\in \mathbb{R}$. In fact,
+    \begin{align*}
+        d\omega_{a,b} &= d(ap_1^\ast\omega_1 + bp_2^\ast\omega_2) \\
+                      &= ad(p_1^\ast\omega_1) + bd(p_2^\ast\omega_2) \\
+                      &= ap_1^\ast d\omega_1 + bp_2^\ast d\omega_2 \\
+                      &= 0,
+    \end{align*}
+    i.e. the closeness of $\omega_{a,b}$ is induced from that of $\omega_1$ and $\omega_2$. Similarly, the other properties of induced.
+\end{Exp}
+
+\begin{Exp}
+    $\mathbb{R}^{2n}, \mathbb{C}^n, S^2$. Consider $S^2\times \mathbb{R}^2$ with the form $\omega = 2p_1^\ast\omega_1 - p_2^\ast\omega_2$. On $S^2$, $\omega_p(u,v) = \langle p, u\times v \rangle$, where $p=(x_1,x_2,x_3)\in S^2\subseteq \mathbb{R}^3$ is such that $\sum_{i=1}^3 x_1^2 = 1$, and $u=(u_1,u_2,u_3),v=(v_1,v_2,v_3)\in T_pS^2\simeq T_p^\ast S^2$. Explicitely,
+    \[
+    \omega_p(u,v) = x_1(u_2v_3 - v_2u_3) + x_2(u_3v_1 - u_1v_3) + x_3(u_1v_2 - v_1u_2).
+    \] 
+    On the other hand, we know that $\omega_p = \sum_{i,j} a_{ij} dx_i\wedge dx_j$, where
+    \[
+    a_{ij} = \bigg( \frac{\partial}{\partial x_i}, \frac{\partial}{\partial x_j}\bigg).
+    \] 
+    In particular, $a_{ii}=0$ for all $i$. We can thus calculate
+    \[
+    \omega_p = x_3dx_1\wedge dx_2 - x_2dx_1\wedge dx_3 + x_1dx_2\wedge dx_3 
+    \] 
+\end{Exp}
+
+\simple{Complete the notes for the last half hour of the class.}
+
+\end{document}
