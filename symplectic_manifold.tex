@@ -159,4 +159,105 @@ Moreover, we have the following commutative diagram
 
 \simple{Complete the notes for the last half hour of the class.}
 
+\subsection*{25/03/2024}
+
+\begin{Rmk}
+    Given two symplectic manifolds $(M_1,\omega_1)$ and $(M_2,\omega_2)$ we can endorse the product $M_1 \times M_2$ with a symplectic form $\omega_{ab}$ of the form:
+    \[
+    \omega_{ab}=ap^\ast_1\omega_1+bp^\ast_2\omega_2,
+    \]
+    where $p_i$ is the projection over $M_i$ and $a,b \in \mathbb{R} \setminus \{0\}$.
+
+    In fact fow each $u=(u_1,u_2), v=(v_1,v_2)$ we have that:
+    \begin{align*}
+        \omega_{a,b}(u,v)   &= ap_1^\ast\omega_1(u,v) + bp_2^\ast\omega_2(u,v) \\
+                            &= a\omega_1(u_1,v_1) + b\omega_2(u_2,v_2),
+    \end{align*}
+    but if we suppose that for each $v$ we have $=0$ than choosing $v=(v_1,0)$ we get $u_1=0$ for the non--degeneracy of $\omega_1$ and vice versa for $u_2$ but if and only if $a \neq 0$ and $b \neq 0$.
+\end{Rmk}
+
+\begin{Dfn}
+    Given a symplectic manifold $(M,\omega)$ and a submanifold $W$, we say that $W$ is symplectic if and only if $\omega_{|W}$ is a symplectic form, and then $\dim W$ is even.
+\end{Dfn}
+
+\begin{Rmk}
+    This condition pass to the tangent space, $T_pW$ si a symplectic subvector space of $T_pM$ for each point $p$.
+\end{Rmk}
+
+\begin{Dfn}
+    Given a symplectic manifold $(M,\omega)$ and a submanifold $L$, we say that $L$ is lagrangian if and only if one of the following three equivalent characterization is true:
+
+    \begin{enumerate}[label=\DfnLbl]
+
+        \item for each point $p$ $T_pL \subset T_pM$ is lagrangian as vector space;
+
+        \item $\omega_{|L} \equiv 0$ and $\dim L = \frac{\dim M}{2}$;
+
+        \item $i^\ast\omega \equiv 0$ and $\dim L= \frac{\dim M}{2}$.
+    \end{enumerate}
+\end{Dfn}
+
+\begin{Exc}
+    Take $\mathbb{R}^{2n}$ with form $\omega=\sum_{i \neq j} dx_i \wedge dx_j$ then this is not a symplectic manifold because $\omega$ degenerates.
+\end{Exc}
+
+\begin{Exp}
+    Take the cotangent bundle $T^\star M$ with the canonical form, what are its lagrangian submanifold?
+
+    We can take $\mathbb{R}^{2n}$ as $T^\star\mathbb{R}^n$ and the standard form is eqivalent to the Liouville ones, the $-$ is only because the order of the element in the basis is used different inside the two forms.
+
+    In general we have, as lagrangian submanifolds:
+    \begin{enumerate}[label=\ExpLbl]
+        \item the zero section $\{(m,0)\}$;
+
+        \item the fibers $T_xM$;
+
+        \item some other sections, in particular all the ones such that the relative $1$--form $\mu$ is a closed one, so $d\mu=0$.
+    \end{enumerate}
+\end{Exp}
+
+\begin{Exp}
+    Take now the sphere $S^2$ with the standard form. Its lagrangian submanifolds are given by the equator, the meridians and the parallels. For this last one we have to see them like the earth, so line that connects the north pole to the south pole, they will fix $\theta$.
+
+    The symplectic structure breaks something in the symmetry of the sphere, only the meridians are lagrangian, while all the other geodetics are not.
+\end{Exp}
+
+\begin{Prp}
+    Take a diffeomorphism $\phi: m_1 \rightarrow M_2$, it is a symplectomorphism if and only if the graph $\Gamma_\phi$ is a lagrangian submanifold inside $(M_1 \times M_2, \omega_{1,-1})$.
+
+    \begin{proof}
+        Let be $\gamma: M_1 \rightarrow M_1 \times M_2$ the map that sends $x$ into $(x,\phi(x))$. now we have:
+        \begin{align*}
+        \Gamma_\phi \text{ is lagrangian}   &\iff \gamma^\ast\omega_{1,-1}=0 \\
+                                            &\iff \gamma^\ast p_1^\ast \omega_1-\gamma^\ast p_2^\ast \omega_2=0 \\
+                                            &\iff (p_1 \circ \gamma)^\ast \omega_1-(p_2 \circ \gamma)^\ast \omega_2=0 \\
+                                            &\iff \forall x \in M_1 \text{   } \omega_1(x)-\omega_2(\phi(x))=0 \\
+                                            &\iff \omega_1 = \phi^\ast \omega_2 \\
+                                            &\iff \phi \text{ is a symplectomorphism}.
+        \end{align*}
+    \end{proof}
+\end{Prp}
+
+\begin{Exp}
+    Take $\{x^0\} \times M_2 = W_2$ inside $M_1 \times M_2$, it is lagrangian? First of all we ahve to suppose $\dim M_1 = \dim M_2$ but it is not sufficient. For example $\mathbb{R}^2 \times \mathbb{R}^2$ with form $\omega=dx_1 \wedge dx_2 + dy_1 \wedge dy_2$, if we take $\{(x^0_1,x^0_2)\} \times \mathbb{R}^2$ we get a symplectic submanifold.
+\end{Exp}
+
+\begin{Exp}
+    Take $M$ as the product of $n$ copies of $S^2$ end use $E_1$ to denote the equator, as form we take $\omega=\sum_i a_1 p^\ast_i \omega_i$ where $\omega_i$ is the standard form on the $i$--th sphere.
+
+    Each sphere is a symplectic submanifold, once we fix any point on the other, the same is true for each families of sphere, fixing a pint in each sphere that we want to eliminate.
+
+    If we take the product of all the equators we get a lagrangian submanifold. Taking only some equators, like two, and fixing a point in the other sphere will give us a submanifold that is nor symplectic nor lagrangian for a dimension problem.
+\end{Exp}
+
+\begin{Dfn}
+    Given a manifold $M$ and a function $\psi: M \times \mathbb{R} \rightarrow M$ we can define the family $\{\psi_t\}$ as $\psi_t(p)=\psi(p,t)$. We will call it an isotopy if they are all diffeomorphisms and $\psi_0$ is the identity over $M$.
+
+    From an isotopy we get a family of vector field fiven by $\frac{d\psi_t}{dt}=X_t \circ \psi_t$. Also if $M$ is compact, then we can define a family of vector field $X_t$ with compact support and find an isotopy that respects the above condition.
+
+    If $X_t=X$ we get the flow of $X$.
+\end{Dfn}
+
+\simple{She also defined the integral curve and the lie derivative, I hope that she reprise them in the next lessons because she went really fast}
+
 \end{document}

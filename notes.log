@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.19)  21 MAR 2024 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.19)  26 MAR 2024 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1579,7 +1579,7 @@ Overfull \hbox (24.42493pt too wide) in paragraph at lines 67--69
 $
  []
 
-[6] [7]) [8] (./notes.aux)
+[6] [7] [8] [9]) [10] (./notes.aux)
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 1475B7937DD7DFF588C970990D9C54C2;91.
 Package logreq Info: Writing requests to 'notes.run.xml'.
@@ -1587,10 +1587,10 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47497 strings out of 476034
- 1081691 string characters out of 5792864
- 1911983 words of memory out of 6000000
- 67085 multiletter control sequences out of 15000+600000
+ 47520 strings out of 476034
+ 1081897 string characters out of 5792864
+ 1914034 words of memory out of 6000000
+ 67087 multiletter control sequences out of 15000+600000
  586382 words of font info for 86 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  88i,15n,120p,1150b,1244s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1608,10 +1608,10 @@ onts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on notes.pdf (8 pages, 274303 bytes).
+Output written on notes.pdf (10 pages, 286200 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 118 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
