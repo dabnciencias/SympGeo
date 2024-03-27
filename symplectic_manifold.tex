@@ -260,4 +260,138 @@ Moreover, we have the following commutative diagram
 
 \simple{She also defined the integral curve and the lie derivative, I hope that she reprise them in the next lessons because she went really fast}
 
+\section*{25/3/24}\label{Sec: }
+
+    If $S\subseteq \mathbb{R}^3$ is an orientable surface then $\omega\in\Omega^2(M)$ is the volume form. $\omega$ is symplectic in $M$.
+
+\begin{Exp}
+    \simple{Add example of the symplectic form given by a torus.}
+\end{Exp}
+
+\begin{Thm}
+    Let $M$ be a symplectic manifold and $\{\psi_t\}$ an isotopy. Let $\omega_t, t\in\mathbb{R}$ be a family of $d$-forms that depends mostly on $t$ Then
+    \[
+        \frac{d}{dt}\psi_t^\ast\omega_t = \psi_t^\ast\bigg( \mathcal{L}_{x_t}\omega_t + \frac{d\omega_t}{dt}\bigg).
+    \] 
+
+    \begin{proof}
+    
+        Not given.
+    \end{proof}
+\end{Thm}
+
+\begin{Thm}[Moser]
+    Let $\omega_t$ be a family of symplectic forms such that $\frac{d}{dt}\omega_t = d\omega_t$ (note that $\frac{d}{dt}[\omega_t]=0$). Then there exists a family of diffeomorphisms $\psi_t\in\text{Diff}(M)$ such that $\psi_t^\ast\omega_t = \omega_0$.
+
+    \begin{proof}
+    
+        Not given.
+    \end{proof}
+\end{Thm}
+
+\begin{Exp}
+    Consider the compact manifold $S^2$ with the symplectic forms $\omega_0=d\theta\wedge dz$ and $\omega_1=rd\theta\wedge dz$. Then $[\omega_0]=[\omega_1]$. If we define
+    \begin{align*}
+        \omega_t &= (1-t)d\theta\wedge dz + trd\theta\wedge dz \\
+                 &= (1-t+tr)d\theta\wedge dz
+    \end{align*}
+    for every $t\in[0,1]$. We want a a family of functions $\psi_t:S^2\to S^2$ such that $\psi_t^\ast\omega_t=\omega_0$, i.e.
+    \[
+    \psi_t^\ast\omega_t(u,v) = \omega_0(d\psi_1(u), d\psi_t(v)),
+    \] 
+    for all $t\in[0,1]$. %The Prof tried to give a motivating example of the following Lemma because she hadn't prepared the proof but gave up and ended up erasing it.
+    
+\end{Exp}
+
+\begin{Lmm}
+    Let $M^{2n}$ be a compact manifold. Lat $\omega_0,\omega_1$ be symplectic forms on $M$ such that $[\omega_0]=[\omega_1]$. Assume that the 2-form $\omega_t = (1-t)\omega_0+t\omega_1$ is symplectic for all $t\in[0,1]$. Then, there exists an isotopy $\{\psi_t\}$ such that $\psi_t^\ast\omega_t=\omega_0$ for every $t\in[0,1]$.
+
+    \begin{proof}
+    
+        Not given.
+    \end{proof}
+\end{Lmm}
+
+\begin{Thm}[Darboux]\label{Thm: Darboux's Theorem}
+    Every symplectic form on $M^{2n}$ can be deformed to the extended symplectic form $\omega_0$ on $\mathbb{R}^{2n}$. Equivalently, if $(M^{2n},\omega)$ is a symplectic manifold, then every point $p\in M$ one can define a local chart centered at $p$ with coordinates $(x_1,\dots,x_n,y_1,\dots,y_n)$ such that
+    \[
+    \omega = \sum_{i=1}^n dx_i\wedge dy_i.
+    \] 
+
+    \begin{proof}
+    
+        Not given (for now?).
+    \end{proof}
+\end{Thm}
+
+\begin{Rmk}
+    It follows from Theorem \ref{Thm: Darboux's Theorem} that the only \textbf{local} symplectic invariant is the dimension.
+\end{Rmk}
+
+\begin{Prp}
+    Let $Q$ be a submanifold of a symplectic manifold $M$ and let $\omega_0,\omega_1$ be two symplectic forms on $M$ such that $\omega_0\mid_Q=\omega_1\mid_Q$. Then there exist two neighbourhoods $N_0, N_1$ of $Q$ such that there exists a differomorphism $\psi:N_0\to N_1$ such that $\psi_0=\text{Id}$ and $\psi^\ast\omega_1=\omega_0$.
+\end{Prp}
+
+\subsection*{Complex structures}\label{Ssec: Complex structures}
+
+\begin{Dfn}\leavevmode
+    \begin{enumerate}[label=\DfnLbl]
+
+        \item A \emph{complex structure} on a vector space $V$ is a linear operator $J:V\to V$ such that $J^2=-\text{Id}$.
+    
+        \item A complex structure $J$ on symplectic a vector space $(V,\Omega)$ is \emph{compatible} with $\Omega$ if 
+            \[
+            G(u,v) := \Omega(u, Jv) \quad \forall \ u,v\in V
+            \] 
+            is an inner product in $V$.
+    \end{enumerate}
+\end{Dfn}
+
+\begin{Exp}
+    For $(\mathbb{R}^2,\omega= dz\wedge \overline{d}z), J:\mathbb{C}\to \mathbb{C}, u\mapsto iu$ is a compatible complex structure.
+\end{Exp}
+
+\begin{Nt}
+    A complex structure $J$ is compatible with a symplectic a symplectic structure $\Omega$ on a symplectic vector space $V$ if, and only if, $J$ is a symplectomorphism. This follows from the fact that, for all $u,v\in V$,
+    \begin{align*}
+        J^\ast\Omega(u,v) &= \Omega(Ju,Jv) \\
+                          &= G(Ju,v) \\
+                          &= G(v,Ju) \\
+                          &= \Omega(v, JJu) \\
+                          &= \Omega(v,-u) \\
+                          &= \Omega(u,v).
+    \end{align*}
+\end{Nt}
+
+\begin{Prp}
+    Let $(V,\Omega)$ be a symplectic vector space. Then there exists a complex structure $J$ compatible with $\Omega$. Moreover, given an inner product $\langle \cdot, -\rangle$ on $V$ we can construct a complex structure $J$ on $V$ that is compatible with $\Omega$.
+
+    \begin{proof}
+    
+        Let $\{e_1,\dots,e_n,f_1,\dots,f_n\}$ be a symplectic basis. Define $J_{e_i}=f_i, J_{f_i}=-e_i$ and the maps
+        \begin{align*}
+            \phi_1:V&\to V^\ast \\
+            v&\mapsto \Omega(v,-), \\ \\
+            \phi_2:V&\to V^\ast \\
+            v&\mapsto \langle v,-\rangle, \\ \\
+            A:V&\to V, \\
+            v&\mapsto (\phi_2^{-1}\phi_1)v.
+        \end{align*}
+        Note that, for all $u,v\in V$,
+        \begin{align*}
+            \langle Au, v \rangle &= \langle (\phi_2^{-1}\phi_1)(u), v \rangle \\
+                                  &= \big(\phi_2\big((\phi_2^{-1}\phi_1)(u)\big)\big) (v) \\
+                                  &= (\phi_1(u))(v) \\
+                                  &= \Omega(u,v); \\ \\
+            \langle A^\ast u, v \rangle &= \langle u, Av \rangle \\
+                                        &= \langle Av, u \rangle \tag{Since our vector space is real.} \\
+                                        &= \Omega(v,u) \\
+                                        &= -\Omega(u,v) \\
+                                        &= -\langle Au, v \rangle \\
+                                        &= \langle -Au, v \rangle.
+        \end{align*}
+        Thus, $A^\ast=-A$ and $(A^\ast)^\ast=A$. \simple{Finish this proof and complete the notes for the last half hour of the class.}
+    \end{proof}
+\end{Prp}
+
 \end{document}
