@@ -394,4 +394,91 @@ Moreover, we have the following commutative diagram
     \end{proof}
 \end{Prp}
 
+\subsection*{8/4/24}\label{Ssec: 8/4/24}
+
+\simple{Fill in notes for this Monday.}
+
+\subsection*{9/4/24}\label{Ssec: 9/4/24}
+
+\begin{Dfn}\label{Dfn: Poisson bracket}
+    Let $(M,\omega)$ be a symplectic manifold. The \emph{Poisson bracket} of $f,g\in\mathbb{C}^\infty(M,\mathbb{R})$ is
+    \[
+    \{f,g\} := \omega(X_f,X_g).
+    \] 
+    In particular, $X_{\{f,g\}} = -[X_f,X_g]$.
+\end{Dfn}
+
+\begin{Thm}[]\label{Thm: Poisson Jacobi}
+    The \hyperref[Dfn: Poisson bracket]{Poisson bracket} satisfies the Jacobi identity.
+
+    \begin{proof}
+    \end{proof}
+\end{Thm}
+
+\begin{Dfn}\label{Dfn: Poisson algebra}
+    A \emph{Poisson algebra} $(P,\{\cdot,-\})$ is a commutative associative algebra equipped with a bracket $\{\cdot,-\}$ that satisfies Leibniz's rule:
+    \[
+    \{f,gh\} = \{f,g\}h + g\{f,h\}.
+    \] 
+\end{Dfn}
+
+\begin{Exp}
+    If $(M,\omega)$ is a symplectic manifold, then $(C^\infty(M,\mathbb{R}),\{\cdot,-\})$ is a Poisson algebra. With respect to the map
+    \begin{align*}
+        C^\infty(M,\mathbb{R}) &\to \chi(M), \\
+        H &\mapsto X_H,
+    \end{align*}
+    the Poisson bracket $\{\cdot,-\}$ ``transforms into'' $-[\cdot,-]$, as noted in Definition \ref{Dfn: Poisson bracket}.
+\end{Exp}
+
+\begin{Dfn}\label{Dfn: Hamiltonian system}
+    A \emph{Hamiltonian system} is a triple $(M,\omega,H)$ where
+    \begin{enumerate}
+    
+        \item $(M,\omega)$ is a symplectic manifold,
+
+        \item $H\in C^\infty(M,\mathbb{R})$, called the \emph{Hamiltonian function}.
+    \end{enumerate}
+\end{Dfn}
+
+\begin{Exp}
+    $(S^2,\omega,H(0,z)=z)$ is a \hyperref[Dfn: Hamiltonian system]{Hamiltonian system}.
+\end{Exp}
+
+\begin{Prp}
+    Let $(M,\omega,H)$ be a Hamiltonian system. Then $\{f,H\}=0$ if, and only if, $f$ is constant along integral curves of $X_H$.
+
+    \begin{proof}
+    
+        Note that
+        \begin{align*}
+            \frac{d}{dt}(f\phi_H^t) &= \frac{d}{dt}((\phi_H^t)^\ast f) \\
+                                    &= (\phi_H^t)^\ast\mathcal{L}_{X_H}f \\
+                                    &= (\phi_H^t)^\ast df(X_H) \\
+                                    &= (\phi_H^t)^\ast (t_{X_f}\omega(X_H)) \\
+                                    &= (\phi_H^t)^\ast \omega(X_f, X_H) \\
+                                    &= (\phi_H^t)^\ast \{f,H\}.
+        \end{align*}
+    \end{proof}
+\end{Prp}
+
+\begin{Dfn}\label{Dfn: First integrals}
+    Let $(M,\omega,H)$ be a \hyperref[Dfn: Hamiltonian system]{Hamiltonian system}.
+
+    \begin{enumerate}[label=\DfnLbl]
+    
+        \item A \emph{first integral} of the Hamiltonian system is a function $f$ such that $\{f,H\}=0$.
+
+        \item Functions $f_1,\dots,f_n\in C^\infty(M)$ are \emph{independent} if $(df_1)_p,\dots,(df_n)_p$ are linearly independent for all $p$ in a open dense subset of $M$.
+
+        \item $(M,\omega,H)$ is (\emph{completely}) \emph{integrable} if it has $\frac{\text{dim}(M)}{2}$ independent first integrals $f_1=H,f_2,\dots,f_n$ such that $\{f_i,f_j\}=0$ for all $i,j\in\{1,\dots,n\}$.
+    \end{enumerate}
+\end{Dfn}
+
+\begin{Nt}
+    Let $(M,\omega,H)$ be an integrable Hamiltonian system with first integrals $f_1=H,f_2,\dots,f_n$, $f=(f_1,\dots,f_n)$ and $f$ be a regular value for $f$. Then $f^{-1}(c)$ is a Lagrangian submanifold of $M$.
+\end{Nt}
+
+\simple{Complete notes from second half of the class.}
+
 \end{document}

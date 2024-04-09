@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.3.22)  26 MAR 2024 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.3.22)  9 APR 2024 17:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1262,7 +1262,7 @@ Overfull \hbox (24.42493pt too wide) in paragraph at lines 67--69
 \T1/lmr/m/n/12 is a sym-plec-tic man-i-fold of di-men-sion 2n. If $\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 x[]; [] ; x[]\OT1/lmr/m/n/12 )$ \T1/lmr/m/n/12 is a co-or-di-nate sys-tem on $\OML/lmm/m/it/12 X$\T1/lmr/m/n/12 , then $\OMS/lmsy/m/n/12 f\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 dx[]\OT1/lmr/m/n/12 )[]\OML/lmm/m/it/12 ; [] ; \OT1/lmr/m/n/12 (\OML/lmm/m/it/12 d[]\OT1/lmr/m/n/12 )[])\OMS/lmsy/m/n/12 g$
  []
 
-[6] [7] [8] [9] [10] [11]) [12] (./notes.aux)
+[6] [7] [8] [9] [10] [11] [12]) [13] (./notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1274,18 +1274,18 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47425 strings out of 476076
- 1071050 string characters out of 5793775
+ 47451 strings out of 476076
+ 1071372 string characters out of 5793775
  1957187 words of memory out of 5000000
- 68632 multiletter control sequences out of 15000+600000
+ 68641 multiletter control sequences out of 15000+600000
  632164 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  88i,15n,120p,1150b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on notes.pdf (12 pages, 295693 bytes).
+Output written on notes.pdf (13 pages, 305212 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
+ 155 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
