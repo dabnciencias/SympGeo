@@ -481,4 +481,47 @@ Moreover, we have the following commutative diagram
 
 \simple{Complete notes from second half of the class.}
 
+\subsection*{16/04/2024}
+
+\begin{Exp}
+    Let $M=\mathbb{C}\mathbb{P}^m=\mathbb{P}(\mathbb{C}^{n+1})$, if we take $n=1$ we get $\mathbb{C}^2 \cong \mathbb{R}^4$ and we can take the sphere $S^3$ inside. It is not symplectic but it is contained in $\mathbb{R}^4$ that is symplectic. On the sphere we consider the standard equivalence relation for getting the projective space as a quotient, in this manner the equivalence class of a point is given by two antipodal points on the sphere.
+
+    Now if we see the inclusion of the sphere and its projection, both with the standard symplectic form, we get the Fubini--Study 2--form that it is symplectic.
+\end{Exp}
+
+\begin{Thm}[Morden--Werenstain reduction theorem]
+
+    $\omega_{FS}$ is symplectic and $i^\star\omega_{std}=p^\star\omega_{ps}$, where $i$ is the inclusion of the sphere, $p$ is the projection map given by the quotient and the other form are the standard ones.
+
+\begin{proof}[Sketch]
+    We take a point $z \in S^{2n-1}$, then the tangent space $T_zS^{2n-1}=T_{p(z)}\mathbb{P}^{n-1} \oplus \langle z \rangle$. So $di^\star\omega_{std}=dp^\star\omega_{ps}$, but $d$ commutes and we get $d\omega_{FS}=0$.
+\end{proof}
+
+\end{Thm}
+
+\subsection*{Integrable System}
+
+\begin{Dfn}
+    Let $(M,\omega,H)$ and Hamiltonian system, we will call \textit{first integral} a function $f \in C^\infty(M,\mathbb{R})$ such that the Poisson bracket with $H$ are 0: $\{f,H\}=0=\omega(X_f,X_H)$.
+\end{Dfn}
+
+\begin{Dfn}
+    An Hamiltonian system is called \textit{completely integrable} if exist $n$ function, where the dimension of $M$ is $2n$, such that one of this is equal to $H$ and they are all indipendent, so $\{f_i,f_j\}=0$.
+
+    We can define a local action of $\mathbb{R}^n$ over $M$ as $t \cdot p=\phi_n^{t_n} \circ \circ \phi_1^{t_1}(p)$ where $\phi_i$ is the flow of $X_{f_i}$.
+\end{Dfn}
+
+\begin{Prp}
+    Thanks to the fact that the elements commutes we have that the action is locally free.
+\end{Prp}
+
+\begin{Exp}
+    \simple{I'm not really sure that it is an example}
+    We want to study the $C$--connected components of a regular level set. As first observation we see that $\mathbb{R}^2$ acts on $C$ with discrete stabilizer $\{0\} \times 2^k$.
+
+    Let $(M,\omega,H)$ a completely integrable Hamiltonian system and let $f=(f_1,\dots,f_n)$. Take now a point $q$ that is a regular value for $f$ and $U$ a open neighbourhood of $q$ composed only by regular value. It exists $V$ such that $f(\overline{V}) \subset U$ compact. If we denote with $g$ the restricition of $f$ to $V$ we get that it has value in $U \times F_q$ where $F_q$ is a compact connected component of $ff^{-1}(q)$ if $U$ and $V$ are sufficientely small.
+\end{Exp}
+
+\subsection*{17/04/2024}
+
 \end{document}
