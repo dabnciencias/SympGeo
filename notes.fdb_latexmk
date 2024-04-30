@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber notes"] 1710256244 "notes.bcf" "notes.bbl" "notes" 1712676406.36126 0
+["biber notes"] 1710256244 "notes.bcf" "notes.bbl" "notes" 1714497144.90901 0
   "misc.bib" 0 -1 0 ""
-  "notes.bcf" 1712676406.11685 107448 5468af567a62228ff9fac67b5d0f2117 "pdflatex"
+  "notes.bcf" 1714497144.41651 107448 5468af567a62228ff9fac67b5d0f2117 "pdflatex"
   (generated)
   "notes.bbl"
   "notes.blg"
   (rewritten before read)
-["pdflatex"] 1712676404.37969 "notes.tex" "notes.pdf" "notes" 1712676406.36157 0
+["pdflatex"] 1714497140.64916 "notes.tex" "notes.pdf" "notes" 1714497144.90952 0
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1710772735 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1710772735 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1710772735 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -312,14 +312,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1711117910.10758 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1711117884 7112993 31e4c9b52257661068d8c2ad16ae13ed ""
   "introduction.tex" 1710861317.61902 14358 8e862b74663fa9733866d12497fdc2e6 ""
-  "notes.aux" 1712676406.11185 4757 2c906777a1cb3ede25480e20f85c446d "pdflatex"
+  "notes.aux" 1714497144.40551 5356 ec109cc125e2ba1683801481c35de697 "pdflatex"
   "notes.bbl" 1710168640.94278 16850 9543a706404c1763059b148de301fe89 "biber notes"
-  "notes.out" 1712676406.11285 91 1475b7937dd7dff588c970990d9c54c2 "pdflatex"
-  "notes.run.xml" 1712676406.11785 2312 caae6aab91fae677bc29b91e3c99cb21 "pdflatex"
-  "notes.tdo" 1712676406.11785 1336 799af5f328b092987ff75192eafdc2bc "pdflatex"
+  "notes.out" 1714497144.40751 91 1475b7937dd7dff588c970990d9c54c2 "pdflatex"
+  "notes.run.xml" 1714497144.41851 2312 caae6aab91fae677bc29b91e3c99cb21 "pdflatex"
+  "notes.tdo" 1714497144.41851 1604 76ad273581bf328b7ca791c19b39b817 "pdflatex"
   "notes.tex" 1710859236.04872 174 9a62b69c3da047fab45983029ed8f111 ""
   "pre.tex" 1710320779.69266 2181 a48b941d0f88b15279709ce98988a28c ""
-  "symplectic_manifold.tex" 1712676404.22184 22213 9e5beeb3b87fa5439b07c92832335942 ""
+  "symplectic_manifold.tex" 1714497135.50551 26955 06684978edaba6779cb1629b328e50e7 ""
   (generated)
   "notes.aux"
   "notes.bcf"

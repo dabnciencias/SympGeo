@@ -524,4 +524,49 @@ Moreover, we have the following commutative diagram
 
 \subsection*{17/04/2024}
 
+\subsection*{30/04/2024}
+
+\begin{Dfn}\label{Dfn: Lie group}
+    A \emph{Lie group} is a group $G$ and a manifold such that the multiplication and the inverse are smooth maps.
+\end{Dfn}
+
+\begin{Exp}\label{Exp: Lie group}
+
+    The following are Lie groups\footnote{For sets of matrices, the group operation is the corresponding matrix multiplication.}:
+    \begin{enumerate}
+    
+        \item $(\mathbb{R}^n,+)$,
+
+        \item $(\mathbb{R}\setminus\{0\},\cdot)$,
+
+        \item $(\mathbb{R}_+,\cdot)$,
+
+        \item $(S^1 = \{z\in\mathbb{C} \mid |z|=1\},\cdot)$,
+
+        \item $\text{GL}(n,\mathbb{R})$, where the smooth structure is induced when considering $\text{GL}(n,\mathbb{R})\subseteq \mathbb{R}^{n^2}$;
+
+        \item $\text{SU}(2) = \{A\in\text{GL}(2,\mathbb{C}) \mid A (\overline{A})^{t}=\text{Id}\} = \big\{ \big( \begin{smallmatrix} \alpha &\beta \\ -\overline{\beta} &\overline{\alpha} \end{smallmatrix} \big) \mid |\alpha|^2 + |\beta|^2 = 1, \alpha\beta\in\mathbb{C}\big\}$;
+
+        \item $\text{SL}(n,\mathbb{R})$;
+
+        \item $\text{O}(n,\mathbb{R}) = \{A\in\text{Mat}_{n\times n}(\mathbb{R}) \mid A A^t=\text{Id}\}$;
+
+        \item $\text{SO}(n,\mathbb{R}) = \{A\in\text{Mat}_{n\times n}(\mathbb{R}) \mid A A^t=\text{Id}, \text{det}(A)=1\}$;
+
+        \item $\text{U}(n,\mathbb{C}) = \{A\in\text{Mat}_{n\times n}(\mathbb{R}) \mid A A^t=\text{Id}\}$;
+
+        \item $\text{SU}(n,\mathbb{C}) = \{A\in\text{Mat}_{n\times n}(\mathbb{R}) \mid A A^t=\text{Id}, \text{det}(A)=1\}$;
+
+        \item $\text{Sp}(2n,\mathbb{R}) = \{A\in\text{Mat}_{2n\times 2n}(\mathbb{R}) \mid M^t\Omega M=\Omega\}$, where $\Omega = \big(\begin{smallmatrix} 0 &\text{Id} \\ -\text{Id} &0 \end{smallmatrix}\big)$.
+    \end{enumerate}
+\end{Exp}
+
+\begin{Dfn}\label{Dfn: Lie subgroup}
+    Let $G$ be a Lie group. A subgroup $H\le G$ is a \emph{Lie subgroup} if it is also a submanifold of $G$.
+\end{Dfn}
+
+\begin{Nt}
+    Any closed subgroup of a Lie group is a Lie subgroup.
+\end{Nt}
+
 \end{document}
