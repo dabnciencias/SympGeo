@@ -481,7 +481,7 @@ Moreover, we have the following commutative diagram
 
 \simple{Complete notes from second half of the class.}
 
-\subsection*{16/04/2024}
+\subsection*{15/04/2024}
 
 \begin{Exp}
     Let $M=\mathbb{C}\mathbb{P}^m=\mathbb{P}(\mathbb{C}^{n+1})$, if we take $n=1$ we get $\mathbb{C}^2 \cong \mathbb{R}^4$ and we can take the sphere $S^3$ inside. It is not symplectic but it is contained in $\mathbb{R}^4$ that is symplectic. On the sphere we consider the standard equivalence relation for getting the projective space as a quotient, in this manner the equivalence class of a point is given by two antipodal points on the sphere.
@@ -522,7 +522,7 @@ Moreover, we have the following commutative diagram
     Let $(M,\omega,H)$ a completely integrable Hamiltonian system and let $f=(f_1,\dots,f_n)$. Take now a point $q$ that is a regular value for $f$ and $U$ a open neighbourhood of $q$ composed only by regular value. It exists $V$ such that $f(\overline{V}) \subset U$ compact. If we denote with $g$ the restricition of $f$ to $V$ we get that it has value in $U \times F_q$ where $F_q$ is a compact connected component of $ff^{-1}(q)$ if $U$ and $V$ are sufficientely small.
 \end{Exp}
 
-\subsection*{17/04/2024}
+\subsection*{16/04/2024}
 
 \subsection*{30/04/2024}
 
@@ -568,5 +568,29 @@ Moreover, we have the following commutative diagram
 \begin{Nt}
     Any closed subgroup of a Lie group is a Lie subgroup.
 \end{Nt}
+
+\subsection*{06/06/2024}
+
+\begin{Prp}
+    Given two Hamiltonian vector field $X,Y$ over a symplectic manifold $(M,\omega)$ we have that the Lie bracket $[X,Y]$ is an Hamiltonian vector field
+
+    \begin{Rmk}
+        Remember that $X$ is Hamiltonian if exists $H: M \rightarrow \mathbb{R}$ such that $i_X\omega=dH$.
+    \end{Rmk}
+
+    \begin{proof}
+        We will need the Cartan magic formula: $\mathcal{L}_X=di_X+i_xd$. Plus the following relation $\mathcal{L}_{[X,Y]}f=\mathcal{L}_X(\mathcal{L}_Yf)-\mathcal{L}_Y(\mathcal{L}_Xf)$.
+
+        From this we get that:
+        \begin{align*}
+            i_{[X,Y]}\omega &= \mathcal{L}_xi_y\omega-i_y\mathcal{L}_x\omega \\
+                            &= di_xi_y\omega+i_xdi_y\omega-i_ydi_x\omega-i_yi_xd\omega,
+        \end{align*}
+        but $\omega$ is symplectic so only the first term survives and this gave us $H=\omega(x,x)$ and so $[X,Y]$ is Hamiltonian.
+
+        \simple{Check with a book.}
+    \end{proof}
+
+\end{Prp}
 
 \end{document}
